@@ -1,0 +1,20 @@
+@mixin colorBtn {
+    background-color: $button-color;
+    color: $white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@mixin whiteBtn {
+    background-color: $white;
+    color: $text-color;
+    border: 2px solid $border;
+}
+
+@mixin spanTitle {
+    font-size: 15px;
+    font-weight: 600;
+    color: $border;
+    font-family: $text-font;
+    text-transform: uppercase;
+}

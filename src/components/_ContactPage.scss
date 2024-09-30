@@ -1,0 +1,23 @@
+.appointment {
+    padding: 120px 0;
+    background-color: $white-block;
+
+    &-title {
+        max-width: 620px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+
+        span {
+            @include spanTitle;
+        }
+
+        p {
+            text-align: center;
+            margin: 20px 0 64px;
+        }
+
+    }
+
+   
+}

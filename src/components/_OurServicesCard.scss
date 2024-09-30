@@ -1,0 +1,96 @@
+.services-card {
+    gap: 80px;
+    height: 640px;
+    width: 1200;
+
+    button {
+        @include whiteBtn;
+        padding: 24px 34px;
+        font-weight: 800;
+        font-size: 14px;
+        margin-top: 35px;
+
+    }
+
+    &-content {
+        position: relative;
+
+        .services-list-item {
+
+            border-bottom: 1px solid #9BB7BF;
+
+            h5 {
+                font-weight: 700;
+                font-size: 22px;
+                margin-bottom: 5px;
+                margin-top: 18px;
+
+                span {
+                    font-weight: 400;
+                    font-family: $text-font;
+                    color: $pagcolor;
+                    text-transform: none;
+                    padding-left: 3px;
+                }
+
+                .points {
+                    font-family: $title-font;
+                    color: $text-color;
+                    font-weight: 900;
+                    padding: 0 3px;
+                    letter-spacing: 3px;
+                }
+
+                .price {
+                    font-weight: 600;
+                    color: $text-color;
+                    font-family: $title-font;
+                }
+            }
+
+            p {
+                color: $pagcolor;
+                padding-bottom: 22px;
+            }
+
+        }
+
+        padding-top: 12px;
+
+        .square-background {
+            position: absolute;
+            // transform: translate(-50%, -50%);
+            // top: 100%;
+            bottom: 0;
+            left: -81px;
+            transform: none;
+
+            // Для другого блоку
+            // &:nth-of-type(2) {
+            //     top: 100%;
+            //     right: 0;
+            //     transform: none;
+            // }
+        }
+
+    }
+
+    &:nth-child(even) {
+        .square-background {
+            bottom: 550px;
+            left: 496px;
+            transform: none;
+        }
+
+        flex-direction: row-reverse;
+
+        .services-list {
+            margin-top: 100px;
+        }
+    }
+
+    img {
+        width: 600px;
+        height: 640px;
+    }
+}

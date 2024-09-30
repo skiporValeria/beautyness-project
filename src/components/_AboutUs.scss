@@ -1,0 +1,116 @@
+
+
+    .values {
+        flex-direction: column;
+        align-items: center;
+        margin: 130px 0;
+
+        span {
+            @include spanTitle;
+
+        }
+
+        h2 {
+            margin: 10px 0 34px;
+        }
+
+    }
+
+    .Sub {
+        &Content {
+            display: flex;
+            margin: 0 auto;
+            gap: 32px;
+            padding: 36px 0;
+            border-bottom: 1px solid #D3D3D3;
+            max-width: max-content;
+        }
+
+        &Img {
+            background-color: #F2FCFF;
+            border: 1px solid #1E2C30;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+        }
+
+        &Text {
+            max-width: 458px;
+
+            h4 {
+                font-weight: 700;
+                font-size: 22px;
+                margin-bottom: 8px;
+
+            }
+        }
+    }
+
+    .about-content {
+        background-color: $white-block;
+        .container {
+            position: relative;
+        }
+        .background-block {
+            background-color: #1E2C30;
+            min-height: 500px;
+            width: 1250px;
+            position: absolute;
+            z-index: 0;
+            top: 192px;
+        }
+        .div-content {
+            position: relative;
+            z-index: 1;
+            padding: 138px 0;
+            gap: 72px;
+            justify-content: center;
+            align-items: center;
+
+            .text-content {
+                max-width: 508px;
+
+                h2 {
+                    margin: 10px 0 14px;
+                }
+                span,
+                h2,
+                p {
+                    color: $white;
+                }
+            }
+        }
+    }
+    .follow-us {
+        margin-top: 150px;
+        gap: 52px;
+        .share-us {
+           span {
+            @include spanTitle;
+        } 
+        h2 {
+            max-width: 264px;
+            margin: 10px 0 22px;
+        }
+        p {
+            margin-bottom: 52px;
+        }
+        }
+        .follow-images {
+            flex-direction: column;
+            gap: 46px;
+        }
+        
+
+       
+    } 
+    .contact-btn {
+            @include colorBtn;
+            text-transform: uppercase;
+            padding: 24px 72px;
+            display: flex;
+            margin: 82px auto 150px;
+            
+        }

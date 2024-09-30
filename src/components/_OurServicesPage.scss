@@ -1,0 +1,26 @@
+.service-discount {
+    background-color: $white-block;
+    padding: 130px 0;
+    &-block {
+        max-width: 654px;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    span {
+        @include spanTitle;
+        //margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 14px;
+    }
+}

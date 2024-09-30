@@ -1,0 +1,79 @@
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: $white;
+    padding: 65px 75px;
+    max-width: 550px;
+    input, textarea {
+        padding: 18px 14px;
+        min-width: 370px;
+        border: 2px solid $border;
+    
+        ::placeholder {
+            font-weight: 400;
+            font-size: 18px;
+            color: $text-color;
+            font-family: $text-font;
+        }
+    
+        :focus, :focus-visible {
+            outline: none;
+            border-color: $border;
+        }
+    }
+    
+    textarea {
+        height: 140px;
+    }
+    
+    button {
+        background-color: $border;
+        color: $white;
+        padding: 24px 110px;
+        font-size: 14px;
+        font-weight: 800;
+    }
+}
+
+
+.appointment-form-page {
+    display: flex;
+    background-color: $white;
+    padding: 98px 100px;
+    flex-direction: column;
+    max-width: 1010px;
+    margin: 0 auto;
+    gap: 15px;
+
+    input, textarea{
+        padding: 20px 16px;
+        border: 1px solid $border;
+
+        ::placeholder {
+            font-weight: 400;
+            font-size: 18px;
+            color: #141414;
+            font-family: $text-font;
+        }
+    
+        :focus, :focus-visible {
+            outline: none;
+            border-color: $border;
+        }
+    }
+    textarea {
+        min-height: 122px;
+    }
+    button {
+        @include colorBtn;
+        font-size: 14px;
+        font-weight: 800;
+        padding: 24px 308px;
+    }
+}
+
+
+
+
+

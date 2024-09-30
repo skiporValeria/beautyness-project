@@ -1,0 +1,107 @@
+.discount {
+    &-info {
+    margin-top: 38px;
+
+    }
+    &-contacts {
+        @include whiteBtn;
+        padding: 18px 40px;
+    }
+
+    &-contact {
+        gap: 20px;
+
+        &-text {
+            h6 {
+                font-family: $text-font;
+                font-size: 14px;
+                font-weight: 800;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .discount-pecrent {
+        justify-content: center;
+        align-items: center;
+        padding: 12px 34px;
+        flex-direction: column;
+        background-color: #1E2C30;
+
+        span,
+        h2 {
+            color: $white;
+        }
+
+        span {
+            font-weight: 800;
+            font-size: 18px;
+            
+
+        }
+
+        h2 {
+            font-size: 55px;
+            font-family: $text-font;
+        }
+
+        .discount-span {
+            font-size: 15px;
+        }
+    }
+
+    &-contacts {
+        @include whiteBtn;
+        padding: 18px 40px;
+    }
+
+    &-contact {
+        gap: 20px;
+
+        &-text {
+            h6 {
+                font-family: $text-font;
+                font-size: 14px;
+                font-weight: 800;
+            }
+
+            span {
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &-pecrent {
+        justify-content: center;
+        align-items: center;
+        padding: 12px 34px;
+        flex-direction: column;
+        background-color: #1E2C30;
+
+        span,
+        h2 {
+            color: $white;
+        }
+
+        span {
+            font-weight: 800;
+            font-size: 18px;
+
+        }
+
+        h2 {
+            font-size: 55px;
+            font-family: $text-font;
+        }
+
+        .discount-span {
+            font-size: 15px;
+        }
+    }
+
+}

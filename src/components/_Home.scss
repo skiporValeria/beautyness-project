@@ -1,0 +1,200 @@
+@import "./DiscountPecrent";
+.banner {
+    position: relative;
+    width: 100%;
+    background-color: $white-block;
+    z-index: -2;
+
+    .container {
+        gap: 78px;
+
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 60%;
+        width: 50%;
+        height: 100%;
+        background-image: url('./../images/background/background-banner.png'); // Зображення
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+    }
+
+    .welcome-pag {
+        gap: 10px;
+        @include spanTitle;
+    }
+
+    h1 {
+        font-size: 70px;
+        font-weight: 700;
+        margin-top: 7px;
+        margin-bottom: 24px;
+    }
+
+    &-pag {
+        font-size: 19px;
+        font-weight: 400;
+        color: $pagcolor;
+        padding-bottom: 34px
+    }
+
+    button {
+        @include colorBtn;
+        padding: 24px 36px;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: $border;
+
+    }
+
+    &-content {
+        max-width: 510px;
+        padding: 235px 0;
+        z-index: 1;
+
+    }
+
+    &-image {
+        z-index: 1;
+
+        img {
+            padding: 230px 0;
+        }
+    }
+}
+
+.FeaturesCards {
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    .FeaturesCard {
+        max-width: 330px;
+    }
+
+    h3 {
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 26px;
+    }
+
+    p {
+        margin: 10px 0 30px;
+    }
+
+    button {
+        @include whiteBtn;
+        font-size: 14px;
+        font-weight: 800;
+        padding: 18px 42px;
+    }
+}
+
+.aboutUs {
+    background-color: $white-block;
+    .container {
+        gap: 170px;
+    }
+
+    .aboutUs-content {
+        max-width: 530px;
+        padding-top: 178px;
+
+        h2 {
+            margin-top: 10px;
+        }
+
+        span {
+            @include spanTitle;
+            
+        }
+    }
+
+    .subCards {
+        gap: 10px;
+        .SubContent {
+            width: 160px;
+            height: 180px;
+            border: 1px solid $text-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px 10px;
+
+            background-color: $white;
+            h4{
+                font-weight: 700;
+                font-size: 22px;
+                text-align: center;
+            }
+
+        }
+        padding-bottom: 178px;
+    }
+
+    p {
+        margin-top: 16px;
+        margin-bottom: 38px;
+    }
+
+    .AboutImg {
+        position: relative;
+        width: 100%;
+        .background-image,
+        .foreground-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto; 
+        }
+
+        .background-image {
+            z-index: 1;
+            padding-top: 150px;
+            left: 40px;
+        }
+
+        .foreground-image {
+            z-index: 2; 
+            opacity: 1; 
+            padding-top: 190px;
+        }
+    }
+}
+
+.appointment-block {
+    background-color: $white-block;
+    .container {
+        gap: 115px;
+        padding-top: 132px;
+        padding-bottom: 132px;
+    }
+    .discount{
+
+     &-div {
+        max-width: 535px;
+        margin-top: 86px;
+        .flat-discount {
+            @include spanTitle;
+
+        }
+        h3 {
+            font-weight: 700;
+            font-size: 45px;
+            max-width: 445px;
+        }
+         p {
+            font-size: 18px;
+         }
+    }
+
+   
+}
+}

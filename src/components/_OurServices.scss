@@ -1,0 +1,19 @@
+@import "./OurServicesCard";
+
+.our-services {
+       
+    margin-bottom: 145px;
+    span {
+        @include spanTitle;
+        text-align: center;
+        margin: 146px 0 10px;
+
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 50px;
+        
+    }
+
+    
+}

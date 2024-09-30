@@ -1,0 +1,72 @@
+
+header {
+    display: flex;
+    padding: 38px 60px;
+    justify-content: space-between;
+
+    .left-header {
+        align-items: center;
+        gap: 46px;
+
+        span {
+            color: $text-color;
+        }
+
+        .logo-div {
+            gap: 12px;
+            align-items: center;
+
+            span {
+                font-family: $title-font;
+                font-size: 28px;
+                font-weight: 700;
+
+            }
+
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        .callUs {
+            gap: 12px;
+            align-items: center;
+
+            span {
+                font-family: Manrope;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .right-header {
+        gap: 32px;
+        align-items: center;
+
+        ul {
+            gap: 30px;
+            color: $pagcolor;
+        }
+
+        .social-icon {
+            gap: 30px;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            @include colorBtn;
+            padding: 16px 32px;
+
+        }
+    }
+}

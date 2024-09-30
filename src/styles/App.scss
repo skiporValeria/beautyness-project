@@ -1,0 +1,52 @@
+@import "./NullStyles";
+@import "./Mixin";
+@import "./colors";
+@import "./Container";
+@import "./../components/TopTitleBlock";
+@import "./../components/Header";
+@import "./../components/Footer";
+@import "./../components/Home";
+@import "./../components/TopTitleBlock";
+@import "./../components/OurServices";
+@import "./../components/OurServicesCard";
+@import "./../components/OurServicesPage";
+@import "./../components/AboutUs";
+@import "./../components/ContactPage";
+@import "./../components/DiscountPecrent";
+@import "./../components/PasswordProtected";
+@import "./../components/Page404";
+@import "./../components/AppointmentForm";
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: $text-font;
+    background-color: $white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+}
+.flex {
+    display: flex;
+}
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: $pagcolor;
+}
+h2 {
+    font-weight: 700;
+    font-size: 45px;
+    
+}
+
+
+
