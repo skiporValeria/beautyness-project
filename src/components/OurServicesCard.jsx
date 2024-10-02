@@ -6,9 +6,9 @@ const OurServicesCard = (props) => {
   return (
     <div className='services-card flex'>
         
-        <img src={props.servImg} />
+        <img src={props.servImg} alt="serv"/>
         <div className="services-card-content">
-            <img src={BackgroundSquare} style={{ width: '90px', height: '90px' }} className='square-background'/>
+            <img src={BackgroundSquare} style={{ width: '90px', height: '90px' }} className='square-background' alt="square-background"/>
             <div className="services-list">
                 <div className='services-list-item'>
                     <h5>Face masks  <span className='points'> .......................................</span> <span>from</span> <span className='price'>$48.00</span></h5>

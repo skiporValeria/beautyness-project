@@ -1069,10 +1069,6 @@ footer .copyright span {
   color: #141414;
   font-family: "Manrope", sans-serif;
 }
-.appointment-form input :focus, .appointment-form input :focus-visible, .appointment-form textarea :focus, .appointment-form textarea :focus-visible {
-  outline: none;
-  border-color: #5C8692;
-}
 .appointment-form textarea {
   height: 140px;
 }
@@ -1124,6 +1120,16 @@ footer .copyright span {
   font-size: 14px;
   font-weight: 800;
   padding: 24px 308px;
+}
+
+input:focus-visible {
+  outline: none;
+  border-color: #141414;
+}
+
+textarea:focus-visible {
+  outline: none;
+  border-color: #141414;
 }
 
 body {

@@ -17,11 +17,10 @@
             font-family: $text-font;
         }
     
-        :focus, :focus-visible {
-            outline: none;
-            border-color: $border;
-        }
+      
     }
+
+
     
     textarea {
         height: 140px;
@@ -74,6 +73,12 @@
 }
 
 
-
-
+input:focus-visible {
+    outline: none;
+    border-color: #141414;
+}
+textarea:focus-visible {
+    outline: none;
+    border-color: #141414;
+}
 
